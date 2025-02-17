@@ -11,9 +11,10 @@ Este proyecto es una aplicación de escritorio para la gestión de citas médica
    pip install -r requirements.txt
 
 ### Ejecutar El proyecto ###
-Una vez que hayas configurado el entorno, simplemente ejecuta el siguiente comando desde la terminal o desde un editor de codigo:
+Una vez que hayas configurado el entorno, simplemente accede a la carpeta vista y ejecuta el siguiente comando desde la terminal o desde un editor de codigo:
+   ```bash
     python -m main.py
-
+ ```
 ### Estuctura ###
 /agendaCitas
 │── modelo/                  # Lógica de base de datos y consultas
