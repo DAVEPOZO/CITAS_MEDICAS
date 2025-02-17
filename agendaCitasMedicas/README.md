@@ -12,17 +12,35 @@ Este proyecto es una aplicación de escritorio para la gestión de citas médica
 
 ### Ejecutar El proyecto ###
 Una vez que hayas configurado el entorno, simplemente ejecuta el siguiente comando desde la terminal o desde un editor de codigo:
-    python loginC.py
+    python -m main.py
 
 ### Estuctura ###
 /agendaCitas
-├── dashboardAdmin.py         # Código para el panel de administración
-├── dashboardPaciente.py      # Código para el panel del paciente
-├── loginC.py                 # Código para el inicio de sesión
-├── bd_citas_centro_medico.py # Código para gestionar la base de datos
-├── requirements.txt          # Dependencias del proyecto
+│── modelo/                  # Lógica de base de datos y consultas
+│   ├── bd_citas_centro_medico.py  # Creación y gestión de la base de datos
+│
+│── modeloDeVista/           # Lógica de la aplicación (acciones del usuario)
+│   ├── agendarCitas.py
+│   ├── AgregarDoctroAdmin.py
+│   ├── editarCancelarCitas.py
+│   ├── export_pdf.py
+│   ├── login.py
+│   ├── registrar.py
+│   ├── verCitas.py
+│
+│── vista/                   # Interfaz gráfica de usuario (Tkinter)
+│   ├── dashboardAdmin.py
+│   ├── dashboardPaciente.py
+│   │── main.py                # Archivo principal para ejecutar la app
+│── medical_center.db          # Base de datos SQLite
+│── README.md                  # Documentación del proyecto
+│── requirements.txt           # Dependencias necesarias
+
+
+
 
 ### Tecnologias usadas ###
 Python 3
 Tkinter
 SQLite
+reportlab
