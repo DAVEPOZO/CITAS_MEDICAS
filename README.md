@@ -16,6 +16,7 @@ Una vez que hayas configurado el entorno, simplemente accede a la carpeta vista 
     python -m main.py
  ```
 ### Estuctura ###
+   ```
 /agendaCitas
 │── modelo/                  # Lógica de base de datos y consultas
 │   ├── bd_citas_centro_medico.py  # Creación y gestión de la base de datos
@@ -37,7 +38,7 @@ Una vez que hayas configurado el entorno, simplemente accede a la carpeta vista 
 │── README.md                  # Documentación del proyecto
 │── requirements.txt           # Dependencias necesarias
 
-
+ ```
 
 
 ### Tecnologias usadas ###
